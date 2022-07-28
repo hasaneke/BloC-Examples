@@ -1,4 +1,4 @@
-import 'package:bloc_examples/examples/todo/view/todo_view.dart';
+import 'package:bloc_examples/todo/view/todo_view.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(

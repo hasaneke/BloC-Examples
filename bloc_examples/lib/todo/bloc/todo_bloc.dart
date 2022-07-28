@@ -1,6 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:bloc_examples/examples/todo/data/models/todo.dart';
 import 'package:flutter/cupertino.dart';
+
+import '../data/models/todo.dart';
 
 part 'todo_event.dart';
 part 'todo_state.dart';

@@ -1,6 +1,6 @@
-import 'package:bloc_examples/examples/todo/bloc/todo_bloc.dart';
-import 'package:bloc_examples/examples/todo/components/edit_todo_bottom_sheet.dart';
-import 'package:bloc_examples/examples/todo/data/models/todo.dart';
+import 'package:bloc_examples/todo/bloc/todo_bloc.dart';
+import 'package:bloc_examples/todo/data/models/todo.dart';
+import 'package:bloc_examples/todo/view/components/edit_todo_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
