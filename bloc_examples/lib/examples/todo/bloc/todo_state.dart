@@ -1,6 +1,22 @@
 part of 'todo_bloc.dart';
 
-@immutable
-abstract class TodoState {}
+class TodoState {
+  final List<Todo> todos;
+  final TodoEventStatus todoEvent;
+  TodoState({
+    required this.todos,
+    required this.todoEvent,
+  });
 
-class TodoInitial extends TodoState {}
+  TodoState copyWith({
+    List<Todo>? todos,
+    TodoEventStatus? todoEvent,
+  }) {
+    return TodoState(
+      todos: todos ?? this.todos,
+      todoEvent: todoEvent ?? this.todoEvent,
+    );
+  }
+}
+
+enum TodoEventStatus { none, newTodo, todoDeleted, todoCompleted, editTodo }
