@@ -1,7 +1,7 @@
 part of 'todo_bloc.dart';
 
 class TodoState {
-  final List<Todo> todos;
+  final List<SimpleTodo> todos;
   final TodoEventStatus todoEvent;
   TodoState({
     required this.todos,
@@ -9,7 +9,7 @@ class TodoState {
   });
 
   TodoState copyWith({
-    List<Todo>? todos,
+    List<SimpleTodo>? todos,
     TodoEventStatus? todoEvent,
   }) {
     return TodoState(

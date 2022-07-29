@@ -1,19 +1,19 @@
-class Todo {
+class SimpleTodo {
   final String id;
   final String content;
   final bool? isDone;
-  Todo({
+  SimpleTodo({
     required this.id,
     required this.content,
     this.isDone,
   });
 
-  Todo copyWith({
+  SimpleTodo copyWith({
     String? id,
     String? content,
     bool? isDone,
   }) {
-    return Todo(
+    return SimpleTodo(
       id: id ?? this.id,
       content: content ?? this.content,
       isDone: isDone ?? this.isDone,

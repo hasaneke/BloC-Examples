@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
 
-import '../data/models/todo.dart';
+import '../data/models/simple_todo.dart';
 
 part 'todo_event.dart';
 part 'todo_state.dart';
@@ -25,7 +25,7 @@ class TodoBloc extends Bloc<TodoEvent, TodoState> {
     final key = UniqueKey().toString();
     print(key);
     emit(state.copyWith(
-        todos: [...state.todos, Todo(id: UniqueKey().toString(), content: content, isDone: false)],
+        todos: [...state.todos, SimpleTodo(id: UniqueKey().toString(), content: content, isDone: false)],
         todoEvent: TodoEventStatus.newTodo));
   }
 
