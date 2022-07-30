@@ -1,6 +1,11 @@
 # BloC-Best-Pratices
 
 This repo contains best practices of BloC state managment
+It also contains
+- Dependenct injection
+- Extension usage
+- MVVM architecture
+- Project is layered by features
 
 There are 3 apps:
 - Counter
