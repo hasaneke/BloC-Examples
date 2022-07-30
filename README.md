@@ -9,11 +9,14 @@ It also contains
 - Project is layered by features
 
 There are 3 apps:
-- Counter
+- Counter: 
+
 Simple demonstration of watching and listening a state
 - Todo
+
 Medium complex app that contain CRUD functionality 
-- Todo 
+- Todo Online
+
 Complex app. RestAPI is used. Login and fetching data
 Login with: 
     username: 'kminchelle',
