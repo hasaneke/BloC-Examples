@@ -14,7 +14,7 @@ There are 3 apps:
     Simple demonstration of watching and listening a state
 - Todo
 
-    Medium complex app that contain CRUD functionality 
+    Medium complex app that contains CRUD(creat,read,update,delete) functionality 
 - Todo Online
 
     Complex app. RestAPI is used. Login and fetching data
