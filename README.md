@@ -2,7 +2,8 @@
 
 This repo contains best practices of BloC state managment
 It also contains
-- Dependenct injection
+- RestAPI integration
+- Dependency injection
 - Extension usage
 - MVVM architecture
 - Project is layered by features
