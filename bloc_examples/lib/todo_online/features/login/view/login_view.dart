@@ -1,5 +1,8 @@
 import 'package:bloc_examples/counter/mixins/show_message_mixin.dart';
+import 'package:bloc_examples/todo_online/features/home/view/home_page.dart';
 import 'package:bloc_examples/todo_online/features/login/bloc/login_bloc.dart';
+import 'package:bloc_examples/todo_online/product/states/user_context.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -21,6 +24,8 @@ class _LoginViewState extends State<LoginView> with ShowMessage {
           showMessage('Login Failed', context);
         } else if (state.loginStatus == LoginStatus.loginSuccess) {
           showMessage('Login Success', context);
+          context.read<UserContext>().updateUser(state.user!);
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => const HomePage()));
         }
       },
       child: Scaffold(

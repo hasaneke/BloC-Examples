@@ -1,6 +1,6 @@
 enum APIPaths {
   baseUrl('https://dummyjson.com'),
-  todosEndPoint('/todos'),
+  getTodosByUserIdEndPoint('/todos/user/'),
   loginEndPoint('/auth/login');
 
   final String path;

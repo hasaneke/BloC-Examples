@@ -1,6 +1,6 @@
 import 'package:bloc_examples/todo_online/features/login/data/models/login_request_model.dart';
 import 'package:bloc_examples/todo_online/features/login/data/models/user_model.dart';
-import 'package:bloc_examples/todo_online/network/api_paths.dart';
+import 'package:bloc_examples/todo_online/product/network/api_paths.dart';
 import 'package:dio/dio.dart';
 
 abstract class ILoginService {

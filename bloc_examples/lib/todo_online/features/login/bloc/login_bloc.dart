@@ -20,11 +20,9 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     emit(state.copyWith(isLoading: true));
     final user = await loginService.login(LoginRequestModel(username: event.userName, password: event.password));
     if (user != null) {
-      emit(state.copyWith(isLoading: false, user: user));
+      emit(state.copyWith(isLoading: false, user: user, loginStatus: LoginStatus.loginSuccess));
     } else {
-      emit(state.copyWith(
-        isLoading: false,
-      ));
+      emit(state.copyWith(isLoading: false, loginStatus: LoginStatus.loginFailed));
     }
   }
 }

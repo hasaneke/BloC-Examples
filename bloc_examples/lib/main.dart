@@ -1,6 +1,5 @@
 import 'package:bloc_examples/todo_online/features/login/view/login_page.dart';
-import 'package:bloc_examples/todo_online/network/todo_online_network.dart';
-import 'package:dio/dio.dart';
+import 'package:bloc_examples/todo_online/product/states/state_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -12,9 +11,7 @@ class _MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiRepositoryProvider(
-        providers: [
-          RepositoryProvider<Dio>(create: (context) => TodoNetworkManager().network),
-        ],
+        providers: BlocRepositoryProviders().providers,
         child: MaterialApp(
           theme: ThemeData.dark().copyWith(
             appBarTheme: const AppBarTheme(
